@@ -40,7 +40,13 @@ body {
 }
 /*============= CAROUSEL =============*/
 
+#carousel {
+  box-shadow: 0 1rem .5rem rgba(0, 0, 0, 0.1);
+}
 
+.carousel-inner {
+  max-height: 40rem!important;
+}
 
 /*---Change Carousel Transition Speed --*/
 
@@ -56,22 +62,72 @@ body {
 
 /*===== FIXED BACKGROUND IMG =====*/
 
+.fixed {
+  background-image: url('../img/matrix.jpg');
+  position: fixed;
+}
+
 .fixed-background {
-  overflow: hidden; /*-- Correction for iOS --*/
+  overflow: hidden;
+  padding: 10rem 0;
 }
 
 
 /*-- Emoji Navbar --*/
 
+.emoji {
+  background-image: linear-gradient(to right, #4981b3, #ac2615);
+  min-height: 0!important;
+  padding: .5rem!important;
+}
 
+.emoji .svg-inline--fa {
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+}
 
 /*============= FOOTER =============*/
 
+footer {
+  background-color: #383838;
+  padding: 1rem 2rem 3rem;
+}
+footer img {
+  height: 3.5rem;
+  margin: 1.5rem auto;
+}
 
+footer p, footer a, .socket a {
+  color: white;
+  text-decoration: none;
+}
 
+ul.social {
+  list-style-type: none;
+  display: flex;
+  max-width: 16rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul.social li {
+  margin: 0 auto;
+}
+
+footer .svg-inline--fa {
+  font-size: 2.3rem;
+ }
+
+ footer.svg-inline--fa:hover {
+  color: #68a0d2;
+ }
 /*============= SOCKET =============*/
 
-
+.socket {
+  background-color: #222222;
+  border-top: .1rem solid #4981b3;
+}
 
 /*============= MEDIA QUERIES =============*/
 
